@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "212501458851",
+    "project_id": "fir-auth-2aa11",
+    "storage_bucket": "fir-auth-2aa11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:212501458851:android:1d7cc513c25d4b7589f416",
+        "android_client_info": {
+          "package_name": "com.example.firebaseemailandpasswordauthentication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "212501458851-gu5rp1uo9820c605c7ethalke3nnv7c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUjY8SSGoUljERFXfiSRKFVm6iWadRtnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "212501458851-gu5rp1uo9820c605c7ethalke3nnv7c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

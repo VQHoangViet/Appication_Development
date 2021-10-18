@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="etEmail" type="id">Email</item>
+    <item name="etPassword" type="id">Password</item>
+    <item name="etConfirmPassword" type="id">Confirm Password</item>
+    <item name="btnCreateAccount" type="id">Create Account</item>
+    <item name="btnSignIn2" type="id">Sign In</item>
+    <item name="textView3" type="id">or</item>
+</resources>
