@@ -7,7 +7,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.phanlehoangviet_19512321_change_maker"
+        applicationId "iuh_ad.phanlehoangviet.msv_19512321.changemaker"
         minSdk 21
         targetSdk 31
         versionCode 1
