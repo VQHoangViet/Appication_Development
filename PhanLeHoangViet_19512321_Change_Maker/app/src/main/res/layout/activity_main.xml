@@ -4,16 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:viewBindingIgnore="true">
 
     <TableLayout
         android:id="@+id/tableLayout"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.787">
+        app:layout_constraintVertical_bias="0.756">
 
         <TableRow
             android:layout_width="match_parent"
@@ -22,242 +24,383 @@
             <Button
                 android:id="@+id/sevenButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="sevenBtn"
                 android:text="@string/seven"
                 android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/eightButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="eightBtn"
                 android:text="@string/eight"
                 android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/nineButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="nineBtn"
                 android:text="@string/nine"
                 android:textColor="@color/black" />
 
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/fourButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="fourBtn"
                 android:text="@string/four"
                 android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/fiveButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="fiveBtn"
                 android:text="@string/five"
                 android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/sixButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="sixBtn"
                 android:text="@string/six"
                 android:textColor="@color/black" />
 
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/oneButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="oneBtn"
                 android:text="@string/one"
                 android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/twoButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="twoBtn"
                 android:text="@string/two"
                 android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/threeButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="threeBtn"
                 android:text="@string/three"
                 android:textColor="@color/black" />
 
         </TableRow>
 
         <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/zeroButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
-                android:layout_weight="0.005"
+                android:layout_weight="1"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="zeroBtn"
                 android:text="@string/zero"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="DuplicateSpeakableTextCheck" />
 
             <Button
                 android:id="@+id/clearButton"
                 style="?android:attr/buttonBarButtonStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_margin="4dp"
-                android:layout_weight="1"
+                android:layout_weight="200"
                 android:backgroundTint="#C1BDBD"
+                android:onClick="clearBtn"
                 android:text="@string/clear"
                 android:textColor="@color/black" />
         </TableRow>
 
     </TableLayout>
 
-    <TextView
-        android:id="@+id/textView"
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/number"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="127dp"
-        tools:layout_editor_absoluteY="209dp" />
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263">
 
-    <TextView
-        android:id="@+id/price"
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="@string/price"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/total_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/total_changes"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/price"
-        android:textAlignment="viewStart"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="210dp" />
+        android:layout_marginBottom="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="1.0">
 
-    <TextView
-        android:id="@+id/twentyDolar"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:text="@string/twentyDollar"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="332dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/oneCent"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:layout_editor_absoluteX="16dp" />
+            <TextView
+                android:id="@+id/twentyDollar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/twentyDollar"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/fiveDollar"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:layout_editor_absoluteX="16dp" />
+            <TextView
+                android:id="@+id/amount20Dollar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/twentyDollar_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/tenCent"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        tools:layout_editor_absoluteX="16dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/twentyFiveCent"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        tools:layout_editor_absoluteX="16dp" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tenDollar"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/oneDollar"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
-        tools:layout_editor_absoluteX="16dp" />
+            <TextView
+                android:id="@+id/amount10Dollar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/tenDollar_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/fiveCent"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
-        tools:layout_editor_absoluteX="16dp" />
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="80dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/tenDollar"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/twentyDolar"
-        tools:layout_editor_absoluteX="16dp" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fiveDollar"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amount5Dollar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/fiveDollar_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/oneDollar"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amount1Dollar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/oneDollar_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/twentyFiveCent"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amount25Cent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/twentyFiveCent_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/tenCent"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amount10Cent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/tenCent_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/fiveCent"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amount5Cent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/fiveCent_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/oneCent"
+                android:textAlignment="textEnd"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/amount1Cent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="4dp"
+                android:text="@string/oneCent_changes"
+                android:textAlignment="viewStart"
+                android:textSize="20sp" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
