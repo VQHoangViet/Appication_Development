@@ -1,0 +1,14 @@
+<resources>
+  <string name="app_name">Calculating Net Income</string>
+
+  <string name="text_gross_income">Gross Income</string>
+  <string name="text_tax_bracket">What is your income tax bracket?</string>
+  <string name="text_round_net_income">Round net income?</string>
+  <string name="text_net_income">Net Income: %s</string>
+
+  <string name="radio_high">High (25%)</string>
+  <string name="radio_medium">Medium (20%)</string>
+  <string name="radio_low">Low (15%)</string>
+
+  <string name="button_calculate">Calculate</string>
+</resources>

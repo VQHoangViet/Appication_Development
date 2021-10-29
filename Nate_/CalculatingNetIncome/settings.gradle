@@ -1,0 +1,2 @@
+rootProject.name = "Calculating Net Income"
+include ':app'

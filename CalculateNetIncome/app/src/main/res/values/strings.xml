@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculate Net Income</string>
+    <string name="txt_what">What is your income tax bracket?</string>
+    <string name="txt_what1">Round net income?</string>
+    <string name="txt_what2">Net Income</string>
+    <string name="result">0</string>
+
+
+    <string name="radioHight">High 25%</string>
+    <string name="radioMedium">Medium 20%</string>
+    <string name="radioLow">Low 15%</string>
+
+</resources>
